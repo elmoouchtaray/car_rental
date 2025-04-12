@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Rental Cars Morocco</title>
+    <link rel="stylesheet" href="page2.css" />
+    <link rel="website icon" href="" />
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      /*header*/
+      header {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .page3 {
+        color: rgb(255, 145, 0);
+        transition: 0.2s;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 10px;
+        color: white;
+        background-color: rgb(255, 145, 0);
+        transition: 0.2s;
+      }
+
+      .page3:hover {
+        background-color: rgb(128, 30, 0);
+      }
+      /*header*/
+      /*cars*/
+      .featured-cars {
+        background-color: white;
+        box-shadow: 5 5 10px rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        margin-bottom: 80px;
+      }
+
+      .featured-cars h2 {
+        text-align: center;
+        color: #000000;
+        font-size: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .page2 {
+        color: rgb(0, 0, 0);
+        transition: 0.2s;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 8px;
+        border: solid 2px #000000;
+      }
+
+      .page2:hover {
+        color: rgb(255, 255, 255);
+        background-color: black;
+        border-radius: 12px;
+      }
+      .car-card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .car-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.144);
+        width: 18%;
+        margin: 10px;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .car-card img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .car-type {
+        font-weight: bold;
+        color: #b30000;
+      }
+
+      .car-name {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+
+      .car-details span {
+        display: inline-block;
+        margin: 5px 10px;
+        background-color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      button:hover {
+        background-color: red;
+        border-radius: 10px;
+      }
+      @media (max-width: 1000px) {
+        .car-card {
+          width: 250px;
+        }
+        .featured-cars h2 {
+          font-size: 30px;
+        }
+      }
+      @media (max-width: 800px) {
+        .car-card {
+          width: 330px;
+        }
+      }
+
+      /*cars*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="page3" href="index.html">Back to home page</a>
+      </nav>
+    </header>
+    <div id="Cars" class="featured-cars">
+      <h2>Browse Our Premium Car Rentals</h2>
+      <div class="car-card-container">
+        <div class="car-card-container">
+          <div class="car-card">
+            <div class="car-type">SUV</div>
+            <div class="car-name">Land Rover Evoque</div>
+            <img
+              src="2024_land-rover_range-rover-evoque_dynamic.webp"
+              style="margin-bottom: -18px"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>2+1 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Land_Rover_Evoque_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Luxury</div>
+            <div class="car-name">Land Rover Sport</div>
+            <img
+              src="land-rover-sport.webp"
+              style="margin-bottom: 8px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>4+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Land_Rover_Sport_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Luxury</div>
+            <div class="car-name">Volkswagen Touareg</div>
+            <img src="twareg.png" alt="Land Rover Sport" />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>5+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Volkswagen_Touareg_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type">Suv</div>
+            <div class="car-name">Golf 8</div>
+            <img
+              src="golf 8.PNG"
+              style="margin-bottom: -28px; margin-top: -30px"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Gasoline</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="hhttps://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Golf_8_disponible?"
+              >Rent</a
+            >
+          </div>
+        </div>
+        <!---------------------->
+        <div class="car-card-container">
+          <div class="car-card">
+            <div class="car-type luxury">Hybrid</div>
+            <div class="car-name">Hyundai Kona Hybrid</div>
+            <img
+              style="margin-top: -18px; margin-bottom: -20px"
+              src="2024_hyundai_4-ultimate_ext_001_c5g (1).webp"
+              style="margin-bottom: 8px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Gasoline</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>2+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Hyundai_Kona_Hybrid_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Economy</div>
+            <div class="car-name">Hyundai Accent Automatic Petrol</div>
+            <img
+              style="margin-top: -13px; margin-bottom: -20px"
+              src="hyundai accent.webp"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Gasoline</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>2+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Hyundai_Accent_Automatic_Petrol_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type">Luxury</div>
+            <div class="car-name">Land Rover Sport (New Arrival)</div>
+            <img
+              src="landrover sport new arrival.webp"
+              style="margin-bottom: 8px"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>4+3 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Land_Rover_Sport_(New_Arrival)_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Economy</div>
+            <div class="car-name">Fiat 500</div>
+            <img
+              src="fiat-500_164b2d62848199.webp"
+              style="margin-bottom: 8px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>2 door(s)</span>
+              <span>4 people</span>
+              <span>1 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Fiat_500_disponible?"
+              >Rent</a
+            >
+          </div>
+        </div>
+        <!---------------------->
+        <div class="car-card-container"></div>
+        <!---------------------->
+        <div class="car-card-container">
+          <div class="car-card">
+            <div class="car-type luxury">Compact</div>
+            <div class="car-name">Dacia Logan</div>
+            <img src="dacia-logan_164b4284b86c71.webp" alt="Land Rover Sport" />
+            <div class="car-details">
+              <span>Gasoline</span>
+              <span>Manual</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>2+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Dacia_Logan_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type">Economy</div>
+            <div class="car-name">Dacia sandero</div>
+            <img
+              src="dacia-sandero-diesel.webp"
+              style="margin-bottom: px"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Manual</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>2+1 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Dacia_Sandero_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Economy</div>
+            <div class="car-name">Hyundai i20</div>
+            <img
+              src="hyundai-i20_164b2db72eb782.webp"
+              style="margin-bottom: 8px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Manual</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>1 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Hyundai_i20_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Compact Suv</div>
+            <div class="car-name">Dacia Sandero Streetway</div>
+            <img
+              src="dacia-sandero-streetway_164b43867c090a.webp"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Manual</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>3+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Dacia_Sandero_Streetway_disponible?"
+              >Rent</a
+            >
+          </div>
+        </div>
+        <!---------------------->
+        <div class="car-card-container">
+          <div class="car-card">
+            <div class="car-type">Economy</div>
+            <div class="car-name">Peugeot 301</div>
+            <img
+              src="peugeot-301.webp"
+              style="margin-bottom: -5px; margin-top: -5p3"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Manual</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>3+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Peugeot_301_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Compact Suv</div>
+            <div class="car-name">Dacia Sandero Stepway</div>
+            <img
+              src="dacia-sandero-stepway_164b43432139be.webp"
+              style="margin-bottom: 8px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Manual</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>2+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Dacia_Sandero_Stepway_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Suv</div>
+            <div class="car-name">Skoda Kodiak</div>
+            <img
+              style="margin-top: -50px; margin-bottom: -30px"
+              src="skoda.PNG"
+              alt="Skoda"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>7 people</span>
+              <span>4+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Skoda_Kodiak_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type">Compact</div>
+            <div class="car-name">Renault clio 4</div>
+            <img
+              src="renalut-clio-4.webp"
+              style="margin-bottom: -25px; margin-top: -12px"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>2+1 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Renault_Clio_4_disponible?"
+              >Rent</a
+            >
+          </div>
+        </div>
+        <!---------------------->
+        <div class="car-card-container">
+          <div class="car-card">
+            <div class="car-type luxury">Compact</div>
+            <div class="car-name">Renault clio 5</div>
+            <img
+              src="renault-clio-5.webp"
+              style="margin-bottom: -20px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>2+1 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Renault_Clio_5_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Comfort</div>
+            <div class="car-name">Hyundai Accent</div>
+            <img
+              src="hyundai-accent-new.webp"
+              alt="Land Rover Sport"
+              style="margin-top: 20px"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>3+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Hyundai_Accent_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type">Comfort</div>
+            <div class="car-name">Hyundai Elantra</div>
+            <img
+              src="hyundai-elantra.webp"
+              style="margin-bottom: 8px; margin-top: 20px"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Gasoline</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>3+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Hyundai_Elantra_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Suv</div>
+            <div class="car-name">Dacia Duster</div>
+            <img
+              src="dacia-duster_164b4391fc2634.webp"
+              style="margin-bottom: 8px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>4 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Dacia_Duster_disponible?"
+              >Rent</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <div id="Cars" id="cars2" class="featured-cars" style="margin-top: -120px">
+      <div class="car-card-container">
+        <!------------>
+        <div class="car-card-container">
+          <div class="car-card">
+            <div class="car-type luxury">Suv</div>
+            <div class="car-name">Hyundai Creta</div>
+            <img src="hyundai-creta.webp" alt="Land Rover Sport" />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>3+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Hyundai_Creta_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type">Suv</div>
+            <div class="car-name">Renault Kadjar</div>
+            <img
+              src="renault-kadjar.webp"
+              style="margin-top: 8px"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Gasoline</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>3 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Renault_Kadjar_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Suv</div>
+            <div class="car-name">Hyundai Tucson</div>
+            <img
+              style="margin-top: -13px; margin-bottom: -20px"
+              src="hyundai-tucson.webp"
+              style="margin-bottom: 8px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Disel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>3+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Hyundai_Tucson_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Hybrid</div>
+            <div class="car-name">Renault Arkana</div>
+            <img
+              style="margin-top: 8px; margin-bottom: 5px"
+              src="renault-arkana.webp"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Gasoline</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>2+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Renault_Arkana_disponible?"
+              >Rent</a
+            >
+          </div>
+        </div>
+        <!------------>
+        <div class="car-card-container">
+          <div class="car-card">
+            <div class="car-type">Suv</div>
+            <div class="car-name">Hyundai Santa Fe</div>
+            <img
+              src="hyundai-santa-fe.webp"
+              style="margin-bottom: -23px; margin-top: -15px"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>7 people</span>
+              <span>4+3 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Hyundai_Santa_Fe_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Crossover</div>
+            <div class="car-name">Volkswagen T-Roc</div>
+            <img
+              src="volkswagen-t-roc_164b4331c3b4fa.webp"
+              style="margin-bottom: 8px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>2 door(s)</span>
+              <span>4 people</span>
+              <span>3+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Volkswagen_T-roc_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">Passenger Van</div>
+            <div class="car-name">Mercedes Vito</div>
+            <img src="mercedes-benz-vito.webp" alt="Land Rover Sport" />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>8 people</span>
+              <span>2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Mercedes_Vito_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type">Suv</div>
+            <div class="car-name">Jeep Grand Cherokee</div>
+            <img
+              src="jeep-grand-cherokee_164b429a9bad5a.webp"
+              style="margin-bottom: px"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>4+2 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Jeep_Grand_Cheroke_disponible?"
+              >Rent</a
+            >
+          </div>
+        </div>
+        <!------------>
+        <div class="car-card-container">
+          <div class="car-card">
+            <div class="car-type luxury">Suv</div>
+            <div class="car-name">Land Rover Evoque</div>
+            <img
+              src="land-rover-evoque_164b43524e4879.webp"
+              style="margin-bottom: 8px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>3+3 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Land_Rover_Evoque_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">luxury</div>
+            <div class="car-name">Maserati Levante</div>
+            <img src="maserati-levante.webp" alt="Land Rover Sport" />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>4 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Maserati_Levante_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type">Economy</div>
+            <div class="car-name">Hyundai i10</div>
+            <img
+              src="hyundai-i10-grand_164b2aa822eeec.webp"
+              style="margin-top: -18px"
+              alt="Land Rover Evoque"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>auto</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>1+1 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Hyundai_i10_disponible?"
+              >Rent</a
+            >
+          </div>
+        </div>
+        <!----------------->
+        <div class="car-card-container">
+          <div class="car-card">
+            <div class="car-type luxury">Luxury</div>
+            <div class="car-name">Mercedes Cla</div>
+            <img
+              src="mercedes cla.JPG"
+              style="margin-bottom: -25px; margin-top: px"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>3+3 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Mercedes_Cla_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type luxury">luxury</div>
+            <div class="car-name">Mercedes G-class</div>
+            <img
+              style="margin-top: -18px; margin-bottom: -15px"
+              src="R (1).png"
+              alt="Land Rover Sport"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>4 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Mercedes_G-Class_disponible?"
+              >Rent</a
+            >
+          </div>
+          <div class="car-card">
+            <div class="car-type">Luxury</div>
+            <div class="car-name">Audi Q8</div>
+            <img
+              src="audi q8.PNG"
+              style="margin-top: -18px; margin-bottom: -50px"
+              alt="Audi Q8"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>auto</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>1+1 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Audi_Q8_disponible?"
+              >Rent</a
+            >
+          </div>
+        </div>
+        <!--------->
+        <div class="car-card-container">
+          <div class="car-card">
+            <div class="car-type luxury">Luxury</div>
+            <div class="car-name">Porshe Cayenne</div>
+            <img
+              src="porshe cayenne.PNG"
+              style="margin-bottom: -25px; margin-top: px"
+              alt="Porshe cayenne"
+            />
+            <div class="car-details">
+              <span>Diesel</span>
+              <span>Automatic</span>
+              <span>5 door(s)</span>
+              <span>5 people</span>
+              <span>3+3 bag(s)</span>
+              <span>A/C</span>
+            </div>
+            <a
+              class="page2"
+              href="https://wa.me/+212691592666?text=Bonjour_Luxury_Car_Reental,_Porshe_Cayenne_disponible?"
+              >Rent</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
